@@ -1,0 +1,23 @@
+labelImg
+- C:\windows_v1.8.1\labelimg.exe
+- 시작 시에 반드시 yolo로 바꿔줄 것
+- class 설정은 data/predefined_classes.txt에서
+
+venv
+- 생성 시에는 python -m venv NAME
+- 실행 시에는 NAME\Scripts\activate.bat 실행
+- 종료 시에는 deactivate
+- 특정 버전으로 만들어야 할 경우,
+   ($경로/python.exe -m venv 이름)
+
+imagePreprocessing.py
+- 사진 전처리 과정
+- 실행시켜주기만 하면 됨
+
+yolo v5
+- yaml 파일로 전처리된 이미지 폴더와 클래스 지정
+- detect.py 파일에서 percentage filter 적절하게 조정
+- 실행 시키기 전에 파일명 확인
+python detect.py --weights runs/train/mold2/weights/best.pt --img 512 --source data/custom --save-txt
+
+python train.py --img 512 --batch 16 --epochs 200 --data cordyceps.yaml --weights runs/train/mold2/weights/best.pt
