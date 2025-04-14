@@ -111,6 +111,25 @@ This project consists of two consecutive object detection tasks:
 
 ---
 
+## Visual Examples
+
+### 1. Raw Image Example
+Image containing various objects including cordyceps:
+
+![](./labeledImage/cordyceps1/i2_0_1_000904.jpg)
+
+### 2. Cordyceps Extraction Result
+Result after running the first-stage detection to isolate cordyceps:
+
+![](./runs/detect/cordyceps1/i2_0_3_000916.jpg)
+
+### 3. Mold Detection Result
+Second-stage model output showing mold detection with probability estimation:
+
+![](./sampleResultImage.jpg)
+
+---
+
 ## Notes
 
 - This project uses an external YOLOv5 repository as the core engine, with modifications made for dataset and logic integration.
