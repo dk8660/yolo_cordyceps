@@ -53,7 +53,6 @@ venv\Scripts\activate.bat
 ```
 
 If a specific Python version is required:
-
 ```bash
 /path/to/python.exe -m venv venv_name
 ```
@@ -61,7 +60,6 @@ If a specific Python version is required:
 ### 3. Image Preprocessing
 
 Run the preprocessing script before training or detection:
-
 ```bash
 python imagePreprocessing.py
 ```
@@ -71,7 +69,6 @@ python imagePreprocessing.py
 ## Training the Model
 
 Training is conducted using YOLOv5's built-in training script:
-
 ```bash
 python train.py \
   --img 512 \
@@ -86,7 +83,6 @@ python train.py \
 ## Running Detection
 
 To detect objects using a trained model:
-
 ```bash
 python detect.py \
   --weights runs/train/mold2/weights/best.pt \
@@ -115,8 +111,26 @@ This project consists of two consecutive object detection tasks:
 
 ---
 
+## Visual Examples
+
+### 1. Raw Image Example
+Image containing various objects including cordyceps:
+
+![](./labeledImage/cordyceps1/i2_0_1_000904.jpg)
+
+### 2. Cordyceps Extraction Result
+Result after running the first-stage detection to isolate cordyceps:
+
+![](./runs/detect/mold7(98.94%)/i2_0_0_000557.jpg)
+
+### 3. Mold Detection Result
+Second-stage model output showing mold detection with probability estimation:
+
+![](./runs/detect/mold7(98.94%)/i2_21_2_183443.jpg)
+
+---
+
 ## Notes
 
 - This project uses an external YOLOv5 repository as the core engine, with modifications made for dataset and logic integration.
-- Emphasis was placed on automation, preprocessing, and practical deployment within a lab setting., with modifications made for dataset and logic integration.
 - Emphasis was placed on automation, preprocessing, and practical deployment within a lab setting.
