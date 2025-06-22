@@ -10,6 +10,9 @@ This project was conducted during an internship at the Korea Electronics Technol
 - **Application**: Automated image classification and mold detection for cordyceps
 - **Type**: Research & development internship project
 - **Institute**: Korea Electronics Technology Institute (KETI)
+- **Development Period**: 2022.07 ~ 2022.08
+- **Number of Team Member**: 1 person
+- **How to Learn**: Official Document
 
 ---
 
